@@ -1,0 +1,51 @@
+order_id,customer_id,order_date,order_amount,payment_method,order_status,shipping_city,shipping_state
+1,43,2024-12-23,278.83,Credit Card,Cancelled,Jimmymouth,Virginia
+2,31,2024-07-15,367.21,PayPal,Cancelled,Patricialand,New York
+3,36,2025-01-28,443.54,Credit Card,Pending,East Jesse,New Hampshire
+4,11,2024-09-30,296.58,Credit Card,Pending,Lake Jason,Alaska
+5,17,2025-06-17,136.64,UPI,Pending,Russellside,Colorado
+6,34,2025-05-21,247.03,UPI,Completed,Perryborough,Maine
+7,39,2024-08-12,215.39,UPI,Completed,Priceshire,Iowa
+8,28,2024-12-20,65.28,Credit Card,Pending,Port Nicoleshire,Montana
+9,14,2024-08-16,336.31,UPI,Cancelled,Woodsstad,Vermont
+10,35,2025-05-03,190.06,PayPal,Cancelled,Karenchester,Kansas
+11,49,2024-12-23,217.33,Credit Card,Completed,South Jeffrey,Maryland
+12,47,2025-03-12,434.64,Credit Card,Completed,Tuckerfurt,Texas
+13,45,2025-01-18,46.0,UPI,Cancelled,Elizabethfurt,Pennsylvania
+14,13,2025-01-29,333.66,PayPal,Completed,Port Tanner,Mississippi
+15,46,2025-02-12,330.17,UPI,Cancelled,New Amanda,New Mexico
+16,20,2024-10-27,49.09,UPI,Pending,Vargastown,Oklahoma
+17,26,2025-04-15,369.54,Credit Card,Completed,Lake Roymouth,North Dakota
+18,43,2025-06-07,404.28,Credit Card,Pending,North Jorge,Minnesota
+19,42,2024-12-14,72.45,UPI,Completed,Jasonmouth,Nevada
+20,24,2025-02-18,111.96,Credit Card,Completed,Kathleenfurt,West Virginia
+21,29,2025-05-08,277.42,Credit Card,Pending,Karenchester,Oklahoma
+22,34,2025-04-01,87.29,Credit Card,Pending,Maryfort,Michigan
+23,29,2025-06-07,108.07,UPI,Completed,Lake Amberstad,Minnesota
+24,8,2025-01-08,242.06,Credit Card,Pending,Lake Casey,Vermont
+25,16,2024-12-08,439.75,UPI,Cancelled,Port Anthonybury,New Jersey
+26,15,2025-05-14,56.18,Credit Card,Cancelled,Port Andrew,Louisiana
+27,5,2025-06-13,407.85,PayPal,Pending,East David,Maryland
+28,22,2025-01-24,430.86,Credit Card,Cancelled,New Staciemouth,Kentucky
+29,2,2024-12-16,67.0,UPI,Cancelled,Katieburgh,Iowa
+30,38,2025-06-09,333.03,Credit Card,Cancelled,Port Loriport,Delaware
+31,36,2024-08-26,279.48,UPI,Completed,New Anthonyport,Washington
+32,15,2025-04-10,27.08,UPI,Cancelled,Sandersborough,Illinois
+33,38,2025-05-26,64.77,Credit Card,Cancelled,New Hannahbury,Massachusetts
+34,15,2024-12-27,381.71,UPI,Pending,Lake Kendraville,Delaware
+35,1,2024-12-17,133.46,Credit Card,Cancelled,West Amandastad,West Virginia
+36,5,2024-10-04,215.08,PayPal,Completed,New Deborahtown,Ohio
+37,46,2025-04-13,251.05,UPI,Completed,Shortville,Wisconsin
+38,41,2024-09-30,435.03,UPI,Pending,Yumouth,Vermont
+39,4,2025-05-18,453.17,UPI,Completed,South Gregory,Idaho
+40,15,2025-02-28,99.03,UPI,Completed,Christinaside,Illinois
+41,5,2024-10-11,21.03,PayPal,Cancelled,Marshallshire,Indiana
+42,3,2025-04-19,207.4,PayPal,Cancelled,Marcusbury,West Virginia
+43,22,2025-04-24,464.73,Credit Card,Completed,West Nicolebury,New Mexico
+44,5,2025-01-14,396.86,UPI,Pending,Hudsonfurt,Louisiana
+45,33,2024-12-31,156.92,UPI,Pending,Anthonymouth,Washington
+46,16,2025-02-24,354.36,PayPal,Cancelled,South Jason,Pennsylvania
+47,18,2024-09-26,370.64,Credit Card,Completed,Matthewview,Wisconsin
+48,43,2024-10-10,396.01,PayPal,Cancelled,New Stacyland,North Dakota
+49,32,2024-12-13,337.7,PayPal,Pending,Lake Richard,Rhode Island
+50,14,2024-07-26,253.6,Credit Card,Completed,Lake Thomas,Maine

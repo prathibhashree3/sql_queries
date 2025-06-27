@@ -1,0 +1,108 @@
+Creating database:
+
+CREATE DATABASE ecommerce_dataset;
+USE ecommerce_dataset;
+  
+Creating tables
+
+CREATE TABLE sample_customers (
+ customer_id INT PRIMARY KEY,
+ first_name VARCHAR(50),
+ last_name VARCHAR(50),
+ email VARCHAR(100),
+ signup_date DATE,
+ total_orders INT,
+ total_spent DECIMAL(10, 2),
+ is_active INT
+);
+
+CREATE TABLE sample_orders (
+ order_id INT PRIMARY KEY,
+ customer_id INT,
+ order_date DATE,
+ order_amount DECIMAL(10, 2),
+ payment_method VARCHAR(50),
+ order_status VARCHAR(50),
+ shipping_city VARCHAR(100),
+ shipping_state VARCHAR(100),
+ FOREIGN KEY (customer_id) REFERENCES sample_customers(customer_id)
+);
+
+To load dataset of customer.csv
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/sample_customers.csv'
+INTO TABLE sample_customers
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+To load dataset of orders.csv
+
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/sample_orders.csv'
+INTO TABLE sample_orders
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
+QUERIES USING SELECT CLAUSE
+
+SELECT first_name, last_name FROM sample_customers;
+
+QUERIES USING ORDER BY CLAUSE
+
+SELECT * FROM sample_customers ORDER BY total_spent DESC;
+
+QUERIES USING WHERE CLAUSE
+
+SELECT * FROM sample_customers WHERE is_active = 1;
+
+QUERIES USING GROUP BY CLAUSE
+
+SELECT is_active, COUNT(*) AS active_count FROM sample_customers GROUP BY is_active;
+
+QUERIES OF AGGREATE FUNCTION 
+1.SUM
+
+SELECT SUM(order_amount) AS total_revenue FROM sample_orders;
+
+2.AVG
+SELECT  AVG(order_amount) AS avg_order FROM sample_orders;
+
+QUERIES OF INNER JOINT
+
+SELECT c.first_name, o.order_id, o.order_amount
+FROM sample_customers c
+INNER JOIN sample_orders o ON c.customer_id = o.customer_id;
+
+QUERIES OF LEFT JOIN
+
+SELECT c.first_name, o.order_id
+FROM sample_customers c
+LEFT JOIN sample_orders o ON c.customer_id = o.customer_id;
+
+QUERIES OF RIGHT JOIN 
+
+SELECT c.first_name, o.order_id
+FROM sample_customers c
+RIGHT JOIN sample_orders o ON c.customer_id = o.customer_id;
+
+QUIRES OF CREATING VIEW
+1
+CREATE VIEW active_customers AS
+SELECT * FROM sample_customers WHERE is_active = 1;
+SELECT * FROM active_customers;
+2
+CREATE VIEW big_orders AS
+SELECT * FROM sample_orders WHERE order_amount > 300;
+SELECT * FROM big_orders;
+
+optimizing the index
+
+CREATE INDEX idx_customer_id ON sample_orders(customer_id);
+CREATE INDEX idx_order_amount ON sample_orders(order_amount);
+CREATE INDEX idx_is_active ON sample_customers(is_active);
+CREATE INDEX idx_email ON sample_customers(email);
+
+
